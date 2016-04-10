@@ -35,7 +35,7 @@ namespace MergeDataAndDoc
                 MergeData(inputFile, templateFile, outputFile);
         }
 
-        private static void MergeData(StreamReader inputFile, StreamReader templateFile, StreamWriter outputFile)
+        public static void MergeData(StreamReader inputFile, StreamReader templateFile, StreamWriter outputFile)
         {
             string templateLine = templateFile.ReadToEnd();//read template file
             string tmp;//站存template 檔案
